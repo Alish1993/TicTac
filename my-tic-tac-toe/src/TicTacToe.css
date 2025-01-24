@@ -1,0 +1,114 @@
+/* TicTacToe.css */  
+
+body {  
+    margin: 0;  
+    padding: 0;  
+    background: linear-gradient(135deg, #78658d, #3f65a8);  
+    height: 100vh;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    font-family: 'Arial', sans-serif;  
+  }  
+  
+  .tic-tac-toe {  
+    text-align: center;  
+    background-color: #ffffff;  
+    border-radius: 15px;  
+    padding: 30px 40px;  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  
+    max-width: 400px;  
+    width: 100%;  
+  }  
+  
+  .tic-tac-toe h1 {  
+    font-size: 2.5rem;  
+    margin-bottom: 20px;  
+    color: #333;  
+  }  
+  
+  .tic-tac-toe-scores {  
+    display: flex;  
+    justify-content: space-around;  
+    margin-bottom: 20px;  
+    font-size: 1.5rem;  
+    color: #444;  
+  }  
+  
+  .tic-tac-toe-board {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;  
+    margin: 20px auto;  
+  }  
+  
+  .tic-tac-toe-cell {  
+    width: 100px;  
+    height: 100px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    background-color: #f9f9f9;  
+    border-radius: 10px;  
+    font-size: 3rem; 
+    font-weight: bold;  
+    color: #444;  
+    cursor: pointer;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }  
+  
+  .tic-tac-toe-cell:hover {  
+    background-color: #d3d3d3;  
+    transform: scale(1.05);  
+  }  
+  
+  .tic-tac-toe-cell.taken {  
+    cursor: not-allowed;  
+    color: #888;  
+  }  
+  
+  .tic-tac-toe-message {  
+    margin-top: 20px;  
+    font-size: 1.5rem;  
+    color: #444;  
+  }  
+  
+  .tic-tac-toe-button {  
+    margin-top: 20px;  
+    padding: 12px 25px;  
+    font-size: 1.2rem; 
+    font-weight: bold;  
+    color: #fff;  
+    background-color: #6a11cb;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }  
+  
+  .tic-tac-toe-button:hover {  
+    background-color: #34a924;  
+    transform: scale(1.05); 
+  }  
+  
+  .tic-tac-toe-form {  
+    display: flex;  
+    flex-direction: column;  
+    margin-bottom: 20px;  
+  }  
+  
+  .tic-tac-toe-input {  
+    padding: 10px;  
+    margin-bottom: 10px;  
+    border: 2px solid #6a11cb;  
+    border-radius: 5px;  
+    font-size: 1.2rem;  
+    color: #333;  
+    outline: none;  
+    transition: border-color 0.3s ease;  
+  }  
+  
+  .tic-tac-toe-input:focus {  
+    border-color: #3f65a8;  
+  }
